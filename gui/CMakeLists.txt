@@ -13,6 +13,10 @@ include_directories(
     ${wxWidgets_INCLUDE_DIRS}
 )
 
-add_executable(gui gui.cpp)
+add_executable(gui 
+    GUI.cpp
+    App.cpp
+    Frame.cpp
+)
 target_link_libraries(gui ${wxWidgets_LIBRARIES})
 set_target_properties(gui PROPERTIES COMPILE_FLAGS ${wxWidgets_CXX_FLAGS})
