@@ -1,7 +1,16 @@
 # MyFDTD
 FDTD法による電磁界シミュレーション
 
-![](img/flowchart.png)
+```mermaid
+graph TD
+    A[Initialize] -->|t = dt| B(Calculate electric field)
+    B --> C(Absorption boundary condition)
+    C --> |t = t + dt/2| D(Calculate magnetic field)
+    D --> E(Absorption boundary condition)
+    E --> |t = t + dt/2| F{t > t_max}
+    F --> B
+    F --> G(Termination)
+```
 
 ## 1D problem
 ![](1D.gif)
