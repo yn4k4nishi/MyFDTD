@@ -15,6 +15,7 @@ graph TD
 ## 1D problem
 ![](img/1D.gif)
 ![](img/1D-time-domain.png)
+![](img/1D-reflection.png)
 
 # 参考
 - 数値電磁界解析のためのFDTD法 -基礎と実践- (コロナ社)
