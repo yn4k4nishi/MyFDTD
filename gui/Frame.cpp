@@ -2,6 +2,8 @@
 #include "App.hpp"
 
 MyFrame::MyFrame(const wxString& title) : wxFrame(NULL, wxID_ANY, title) {
+    m_toolbar = NULL;
+    
     // SetIcon(wxICON(sample));
 
 #if wxUSE_MENUBAR
@@ -37,6 +39,22 @@ MyFrame::MyFrame(const wxString& title) : wxFrame(NULL, wxID_ANY, title) {
 #endif // wxUSE_STATUSBAR
 }
 
+void MyFrame::Toolbar(wxToolBarBase* toolbar){
+    enum {
+        Tool_new,
+        Tool_open,
+        Tool_MAX
+    };
+
+    wxBitmapBundle toolBarBitmaps[Tool_MAX];
+    toolBarBitmaps[Tool_new ] = wxBITMAP_BUNDLE_2(new );
+    toolBarBitmaps[Tool_open] = wxBITMAP_BUNDLE_2(open);
+
+    const wxSize sizeBitmap = toolBarBitmaps[Tool_MAX].GetDefaultSize();
+
+    toolbar->SetToolBitmapSize(sizeBitmap);
+
+}
 
 void MyFrame::OnQuit(wxCommandEvent& WXUNUSED(event)){
     Close(true);
