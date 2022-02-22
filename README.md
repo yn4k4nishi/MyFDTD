@@ -16,10 +16,16 @@ graph TD
 自由空間中にある厚さ$d$の誘電体に平面波を入射した場合
 <div align="center">
     <img src="img/1d-mur/problem.png">
-    <h3>Murの吸収境界</h3>
-    <img src="img/1d-mur/animation.gif">
-    <h3>PML吸収境界</h3>
-    <img src="img/1d-pml/animation.gif">
+</div>
+<div align="center">
+    <div>
+        <h3>Murの吸収境界</h3>
+        <img src="img/1d-mur/animation.gif">
+    </div>
+    <div>
+        <h3>PML吸収境界</h3>
+        <img src="img/1d-pml/animation.gif">
+    </div>
 </div>
 
 # 参考
