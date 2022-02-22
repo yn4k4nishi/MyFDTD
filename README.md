@@ -13,7 +13,7 @@ graph TD
 ```
 
 ## 1D problem
-![](img/1D.gif)
+![](img/1d-mur/animation.gif)
 
 
 # 参考
